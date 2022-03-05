@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="icon" 
+      type="image/png" 
+      href="media/favicon.ico">
+    <title>Little Trees</title>
+</head>
+
+<body>
+    <nav>
+        <div class="webnav">
+
+            <ul class="navlinks">
+                <li  id="logotree"><a href="index.html"><img id="treeicon" src="media/pine-tree.png" alt="pain tree">Little Trees</a></li>
+                <li class="navlink"><a href="fragrance.html">Fragrance</a></li>
+                <li class="navlink"><a href="about.html">About</a></li>
+                <li class="navlink"><a href="membership.html">Membership</a></li>
+            </ul>
+
+        </div>
+
+        <!--For mobile-->
+        <div class="mobilenav">
+
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="index.html" class="menuitem"><img id="treeicon" src="media/pine-tree.png" alt="pain tree"></a>
+                    <a href="index.html" class="menuitem">Home</a>
+                    <a href="fragrance.html" class="menuitem">Fragrance</a>
+                    <a href="about.html" class="menuitem">About</a>
+                    <a href="membership.html" class="menuitem">Membership</a>
+                </div>
+
+            </div>
+
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()"></span>
+
+
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span class="menu" onclick="openNav()"><img class="lines" alt="menuicon" src="media/lines.PNG"
+                    width="35" height="30"></span>
+        </div>
+  </nav>
+    </nav>
+    <footer>
+        <p>Copyright © 2022 Little Trees. All rights reserved</p>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+            document.getElementById("videomobile").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+            document.getElementById("videomobile").style.display = "block";
+        }
+        </script>
+</body>
+
+</html>
